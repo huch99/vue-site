@@ -34,6 +34,7 @@ const links = [
     { link: '/vif', title: 'v-if', dateTitle: 'day02 - 0825' },
     { link: '/vshow', title: 'v-show', dateTitle: 'day02 - 0825' },
     { link: '/vfor', title: 'v-for', dateTitle: 'day02 - 0825' },
+    { link: '/click', title: 'event - click', dateTitle: 'day02 - 0825' },
 ]
 
 const showState = reactive({});

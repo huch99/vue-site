@@ -1,5 +1,4 @@
 <template>
-    <h1>v-bind 사용하기</h1>
     <!-- img v-bind 사용 -->
     <img v-bind:src="url">
 
@@ -12,44 +11,86 @@
         &lt;div v-bind:style="{ fontSize: size2 + 'px' }"&gt;
     </div>
 
-    <div v-bind:style="{ 'font-size' : size3 + 'px' }">
+    <div v-bind:style="{ 'font-size': size3 + 'px' }">
         &lt;div v-bind:style="{ 'font-size' : size3 + 'px' }"&gt;
     </div>
 
     <!--  -->
-    <div v-bind:style="{ backgroundColor : isImportant ? 'lightcoral' : 'lightgray' }">
+    <div v-bind:style="{ backgroundColor: isImportant ? 'lightcoral' : 'lightgray' }">
         &lt;div v-bind:style="{ backgroundColor : isImportant ? 'lightcoral' : 'lightgray' }"&gt;
     </div>
 
     <!-- class 적용 -->
     <div v-bind:class="className">
-         &lt;div v-bind:class="className"&gt;
+        &lt;div v-bind:class="className"&gt;
     </div>
 
-    <div v-bind:class="{ myClass : isImportant }">
-         &lt;div v-bind:class="{ myClass : isImportant }"&gt;
+    <div v-bind:class="{ myClass: isImportant }">
+        &lt;div v-bind:class="{ myClass : isImportant }"&gt;
     </div>
 
-    <div :class="{ myClass : !isImportant }">
-         &lt;div :class="{ myClass : !isImportant }"&gt; <br>
-         v-bind:의 약어는 ':' 입니다.
+    <div :class="{ myClass: !isImportant }">
+        &lt;div :class="{ myClass : !isImportant }"&gt; <br>
+        v-bind:의 약어는 ':' 입니다.
     </div>
 
-    <pre>
-        &lt;script setup&gt;
-        import { ref } from 'vue';
-        import beach from '../../assets/img_beach3.jpg';
+    <button @click="() => view = true"><>코드 보기</button>
 
-        const url = beach;
-        const size = ref('30px');
-        const size2 = ref(40);
-        const size3 = ref(15);
+    <div v-show='view' class="codeView">
+        <pre>
+            &lt;template&gt;
+                &lt;!-- img v-bind 사용 --&gt;
+                &lt;img v-bind:src=&quot;url&quot;/&gt;
 
-        const isImportant = ref(true);
+                &lt;!-- v-bind:style 사용 --&gt;
+                &lt;div v-bind:style=&quot;{ fontSize: size }&quot;&gt;
+                    &amp;lt;div v-bind:style=&quot;{ fontSize: size }&quot;&gt;
+                &lt;/div&gt;
 
-        const className = ref('impClass');
-        &lt;/script&gt;
-    </pre>
+                &lt;div v-bind:style=&quot;{ fontSize: size2 + 'px' }&quot;&gt;
+                    &amp;lt;div v-bind:style=&quot;{ fontSize: size2 + 'px' }&quot;&gt;
+                &lt;/div&gt;
+
+                &lt;div v-bind:style=&quot;{ 'font-size': size3 + 'px' }&quot;&gt;
+                    &amp;lt;div v-bind:style=&quot;{ 'font-size' : size3 + 'px' }&gt;
+                &lt;/div&gt;
+
+                &lt;!--  --&gt;
+                &lt;div v-bind:style=&quot;{ backgroundColor: isImportant ? 'lightcoral' : 'lightgray' }&quot;&gt;
+                    &amp;lt;div v-bind:style=&quot;{ backgroundColor : isImportant ? 'lightcoral' : 'lightgray' }&gt;
+                &lt;/div&gt;
+
+                &lt;!-- class 적용 --&gt;
+                &lt;div v-bind:class=&quot;className&quot;&gt;
+                    &amp;lt;div v-bind:class=&quot;className&quot;&gt;
+                &lt;/div&gt;
+
+                &lt;div v-bind:class=&quot;{ myClass: isImportant }&quot;&gt;
+                    &amp;lt;div v-bind:class=&quot;{ myClass : isImportant }&gt;
+                &lt;/div&gt;
+
+                &lt;div v-bind:class=&quot;{ myClass: !isImportant }&quot;&gt;
+                    &amp;lt;div v-bind:class=&quot;{ myClass : !isImportant }&gt; &lt;br&gt;
+                    v-bind:의 약어는 ':' 입니다.
+                &lt;/div&gt;
+            &lt;/template&gt;
+
+            &lt;script setup&gt;
+            import { ref } from 'vue';
+            import beach from '../../assets/img_beach3.jpg';
+
+            const url = beach;
+            const size = ref('30px');
+            const size2 = ref(40);
+            const size3 = ref(15);
+
+            const isImportant = ref(true);
+
+            const className = ref('impClass');
+            &lt;/script&gt;
+        </pre>
+        <button @click="() => view = false"> X </button>
+    </div>
 </template>
 
 <script setup>
@@ -62,6 +103,7 @@ const size2 = ref(40);
 const size3 = ref(15);
 
 const isImportant = ref(true);
+const view = ref(false);
 
 const className = ref('impClass');
 </script>
@@ -76,6 +118,7 @@ pre {
 .impClass {
     background-color: lightblue;
 }
+
 .myClass {
     background-color: lightgreen;
 }

@@ -49,10 +49,24 @@ pre {
     text-align: left;
     border: 1px solid #000;
     padding: 10px;
+    background-color: #fff;
 }
 
 .section {
   width: 100%;
   height: 100%;
+}
+
+.codeView {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+.codeView > button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
 }
 </style>
