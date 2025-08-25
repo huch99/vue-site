@@ -6,8 +6,10 @@
                 @mouseleave="() => showState[x] = false">
                 {{ x }}
                 <ul v-show="showState[x]">
-                    <li v-for="(y, yIndex) in filteredLinks(x)" :key="yIndex">
-                        <router-link :to='y.link' :style="{ color: '#fff' }">
+                    <li v-for="(y, yIndex) in filteredLinks(x)" :key="yIndex"
+                        class="subMenuList"
+                    >
+                        <router-link :to='y.link' class="router-list">
                             {{ y.title }}
                         </router-link>
                     </li>
@@ -31,6 +33,7 @@ const links = [
     { link: '/vbind', title: 'v-bind', dateTitle: 'day02 - 0825' },
     { link: '/vif', title: 'v-if', dateTitle: 'day02 - 0825' },
     { link: '/vshow', title: 'v-show', dateTitle: 'day02 - 0825' },
+    { link: '/vfor', title: 'v-for', dateTitle: 'day02 - 0825' },
 ]
 
 const showState = reactive({});
@@ -56,6 +59,7 @@ function filteredLinks(date) {
     padding: 10px;
     background-color: #005;
     color: #fff;
+    margin-top: 5px;
 }
 
 .layoutContainer>ul>li {
@@ -72,5 +76,23 @@ function filteredLinks(date) {
 
 .layoutContainer>.routerView {
     width: calc(100% - 200px);
+}
+
+.routerView {
+    padding: 10px;
+}
+
+.router-list {
+    color: #fff;
+    text-decoration: none;
+}
+
+.subMenuList {
+    width: 100%;
+}
+
+.router-list:hover {
+    font-weight: bold;
+    
 }
 </style>
