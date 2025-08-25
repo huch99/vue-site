@@ -36,6 +36,7 @@ const links = [
     { link: '/vfor', title: 'v-for', dateTitle: 'day02 - 0825' },
     { link: '/click', title: 'event - click', dateTitle: 'day02 - 0825' },
     { link: '/input', title: 'event - input', dateTitle: 'day02 - 0825' },
+    { link: '/mousemove', title: 'event - mousemove', dateTitle: 'day02 - 0825' },
 ]
 
 const showState = reactive({});
@@ -91,6 +92,7 @@ function filteredLinks(date) {
 
 .subMenuList {
     width: 100%;
+    border-bottom: 1px solid #fff;
 }
 
 .router-list:hover {

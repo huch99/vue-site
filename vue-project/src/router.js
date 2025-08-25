@@ -6,6 +6,7 @@ import Directives_vshow from './components/day02_0825/Directives_vshow.vue'
 import Directives_vfor from './components/day02_0825/Directives_vfor.vue'
 import Events_click from './components/day02_0825/Events_click.vue'
 import Events_input from './components/day02_0825/Events_input.vue'
+import Events_mousemove from './components/day02_0825/Events_mousemove.vue'
 
 const routes = [
   { path: '/vbind', component: Directives_vbind },
@@ -14,6 +15,7 @@ const routes = [
   { path: '/vfor', component: Directives_vfor },
   { path: '/click', component: Events_click },
   { path: '/input', component: Events_input },
+  { path: '/mousemove', component: Events_mousemove },
 ]
 
 const router = createRouter({
