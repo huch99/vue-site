@@ -35,6 +35,7 @@ const links = [
     { link: '/vshow', title: 'v-show', dateTitle: 'day02 - 0825' },
     { link: '/vfor', title: 'v-for', dateTitle: 'day02 - 0825' },
     { link: '/click', title: 'event - click', dateTitle: 'day02 - 0825' },
+    { link: '/input', title: 'event - input', dateTitle: 'day02 - 0825' },
 ]
 
 const showState = reactive({});
