@@ -46,13 +46,13 @@
 import { ref } from 'vue';
 
 const imgList = [
-    { name: 'Burrito', url: 'img_burrito.svg' },
-    { name: 'Salad', url: 'img_salad.svg' },
-    { name: 'Cake', url: 'img_cake.svg' },
-    { name: 'Soup', url: 'img_soup.svg' },
-    { name: 'Fish', url: 'img_fish.svg' },
-    { name: 'Pizza', url: 'img_pizza.svg' },
-    { name: 'Rice', url: 'img_rice.svg' }
+    { name: 'Burrito', url: '/img_burrito.svg' },
+    { name: 'Salad', url: '/img_salad.svg' },
+    { name: 'Cake', url: '/img_cake.svg' },
+    { name: 'Soup', url: '/img_soup.svg' },
+    { name: 'Fish', url: '/img_fish.svg' },
+    { name: 'Pizza', url: '/img_pizza.svg' },
+    { name: 'Rice', url: '/img_rice.svg' }
 ];
 
 const imgUrl = ref('img_pizza.svg');
@@ -70,13 +70,13 @@ const lightOn = ref(false);
 import { ref } from 'vue';
 
 const imgList = [
-    { name: 'Burrito', url: 'img_burrito.svg' },
-    { name: 'Salad', url: 'img_salad.svg' },
-    { name: 'Cake', url: 'img_cake.svg' },
-    { name: 'Soup', url: 'img_soup.svg' },
-    { name: 'Fish', url: 'img_fish.svg' },
-    { name: 'Pizza', url: 'img_pizza.svg' },
-    { name: 'Rice', url: 'img_rice.svg' }
+    { name: 'Burrito', url: '/img_burrito.svg' },
+    { name: 'Salad', url: '/img_salad.svg' },
+    { name: 'Cake', url: '/img_cake.svg' },
+    { name: 'Soup', url: '/img_soup.svg' },
+    { name: 'Fish', url: '/img_fish.svg' },
+    { name: 'Pizza', url: '/img_pizza.svg' },
+    { name: 'Rice', url: '/img_rice.svg' }
 ];
 
 const imgUrl = ref('img_pizza.svg');

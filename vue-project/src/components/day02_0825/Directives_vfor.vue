@@ -21,13 +21,13 @@
 
         &lt;script setup&gt;
             const imgList = [
-                {url: 'img_burrito.svg', name: 'Burrito'},
-                {url: 'img_salad.svg', name: 'Salad'},
-                {url: 'img_cake.svg', name: 'Cake'},
-                {url: 'img_soup.svg', name: 'Soup'},
-                {url: 'img_fish.svg', name: 'Fish'},
-                {url: 'img_pizza.svg', name: 'Pizza'},
-                {url: 'img_rice.svg', name: 'Rice'},
+                {url: '/img_burrito.svg', name: 'Burrito'},
+                {url: '/img_salad.svg', name: 'Salad'},
+                {url: '/img_cake.svg', name: 'Cake'},
+                {url: '/img_soup.svg', name: 'Soup'},
+                {url: '/img_fish.svg', name: 'Fish'},
+                {url: '/img_pizza.svg', name: 'Pizza'},
+                {url: '/img_rice.svg', name: 'Rice'},
             ]
         &lt;/script&gt;
     </pre>
@@ -40,13 +40,13 @@
 import { ref } from 'vue';
 
 const imgList = [
-    { url: 'img_burrito.svg', name: 'Burrito' },
-    { url: 'img_salad.svg', name: 'Salad' },
-    { url: 'img_cake.svg', name: 'Cake' },
-    { url: 'img_soup.svg', name: 'Soup' },
-    { url: 'img_fish.svg', name: 'Fish' },
-    { url: 'img_pizza.svg', name: 'Pizza' },
-    { url: 'img_rice.svg', name: 'Rice' },
+    { url: '/img_burrito.svg', name: 'Burrito' },
+    { url: '/img_salad.svg', name: 'Salad' },
+    { url: '/img_cake.svg', name: 'Cake' },
+    { url: '/img_soup.svg', name: 'Soup' },
+    { url: '/img_fish.svg', name: 'Fish' },
+    { url: '/img_pizza.svg', name: 'Pizza' },
+    { url: '/img_rice.svg', name: 'Rice' },
 ]
 
 const view = ref(false);
