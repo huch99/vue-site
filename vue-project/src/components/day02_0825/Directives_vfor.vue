@@ -10,26 +10,26 @@
 
     <div v-show="view" class="codeView">
     <pre>
-        &lt;template&gt;
-            &lt;div&gt;
-                &lt;figure v-for='x in imgList'&gt; 
-                &lt;img :src='x.url'&gt;&lt;/img&gt; 
-                &lt;figcaption&gt; &#123;&#123; x.name &#125;&#125; &lt;figcaption&gt; 
-                &lt;/figure&gt;
-            &lt;/div&gt;
-        &lt;/template&gt;
+&lt;template&gt;
+    &lt;div&gt;
+        &lt;figure v-for='x in imgList'&gt; 
+        &lt;img :src='x.url'&gt;&lt;/img&gt; 
+        &lt;figcaption&gt; &#123;&#123; x.name &#125;&#125; &lt;figcaption&gt; 
+        &lt;/figure&gt;
+    &lt;/div&gt;
+&lt;/template&gt;
 
-        &lt;script setup&gt;
-            const imgList = [
-                {url: '/img_burrito.svg', name: 'Burrito'},
-                {url: '/img_salad.svg', name: 'Salad'},
-                {url: '/img_cake.svg', name: 'Cake'},
-                {url: '/img_soup.svg', name: 'Soup'},
-                {url: '/img_fish.svg', name: 'Fish'},
-                {url: '/img_pizza.svg', name: 'Pizza'},
-                {url: '/img_rice.svg', name: 'Rice'},
-            ]
-        &lt;/script&gt;
+&lt;script setup&gt;
+    const imgList = [
+        { url: '/public/img_burrito.svg', name: 'Burrito' },
+        { url: '/public/img_salad.svg', name: 'Salad' },
+        { url: '/public/img_cake.svg', name: 'Cake' },
+        { url: '/public/img_soup.svg', name: 'Soup' },
+        { url: '/public/img_fish.svg', name: 'Fish' },
+        { url: '/public/img_pizza.svg', name: 'Pizza' },
+        { url: '/public/img_rice.svg', name: 'Rice' },
+    ]
+&lt;/script&gt;
     </pre>
 
     <button @click="() => view = false"> X </button>
@@ -40,13 +40,13 @@
 import { ref } from 'vue';
 
 const imgList = [
-    { url: '/img_burrito.svg', name: 'Burrito' },
-    { url: '/img_salad.svg', name: 'Salad' },
-    { url: '/img_cake.svg', name: 'Cake' },
-    { url: '/img_soup.svg', name: 'Soup' },
-    { url: '/img_fish.svg', name: 'Fish' },
-    { url: '/img_pizza.svg', name: 'Pizza' },
-    { url: '/img_rice.svg', name: 'Rice' },
+    { url: '/public/img_burrito.svg', name: 'Burrito' },
+    { url: '/public/img_salad.svg', name: 'Salad' },
+    { url: '/public/img_cake.svg', name: 'Cake' },
+    { url: '/public/img_soup.svg', name: 'Soup' },
+    { url: '/public/img_fish.svg', name: 'Fish' },
+    { url: '/public/img_pizza.svg', name: 'Pizza' },
+    { url: '/public/img_rice.svg', name: 'Rice' },
 ]
 
 const view = ref(false);
