@@ -12,7 +12,7 @@
 
     <div v-if="text.includes('피자')">
         <p>'피자'글자가 포함되어 있다.</p>
-        <img :src="{url}">
+        <img src="/public/img_pizza.svg">
     </div>
     <p v-else>'피자' 글자 없음</p>
 
@@ -31,14 +31,13 @@
 
 <script setup>
 import { ref } from 'vue';
-import pizza from '../../assets/img_pizza.svg';
+
 
 const typewritersInStock = ref(true);
 const typewriterCount = ref(0);
 const typewriterCount2 = ref(2);
 
 const text = ref('피자');
-const url = pizza;
 </script>
 
 <style scoped>
