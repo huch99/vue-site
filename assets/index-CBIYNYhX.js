@@ -111,7 +111,7 @@
 
         const showDiv = ref(true);
         <\/script>
-    `,-1)),E("button",{onClick:r[1]||(r[1]=()=>n.value=!1)}," X ")],512),[[Ue,n.value]])],64))}},Wu=bt(Ku,[["__scopeId","data-v-7d424c3c"]]),qu=["src"],Gu={class:"codeView"},Qu={__name:"Directives_vfor",setup(e){const t=[{url:"img_burrito.svg",name:"Burrito"},{url:"img_salad.svg",name:"Salad"},{url:"img_cake.svg",name:"Cake"},{url:"img_soup.svg",name:"Soup"},{url:"img_fish.svg",name:"Fish"},{url:"img_pizza.svg",name:"Pizza"},{url:"img_rice.svg",name:"Rice"}],n=re(!1);return(s,r)=>(ee(),te(ie,null,[E("div",null,[(ee(),te(ie,null,Sn(t,i=>E("figure",null,[E("img",{src:i.url},null,8,qu),E("figcaption",null,_t(i.name),1)])),64))]),E("button",{onClick:r[0]||(r[0]=()=>n.value=!0)},"<>코드 보기"),Be(E("div",Gu,[r[2]||(r[2]=E("pre",null,`        <template>
+    `,-1)),E("button",{onClick:r[1]||(r[1]=()=>n.value=!1)}," X ")],512),[[Ue,n.value]])],64))}},Wu=bt(Ku,[["__scopeId","data-v-7d424c3c"]]),qu=["src"],Gu={class:"codeView"},Qu={__name:"Directives_vfor",setup(e){const t=[{url:"/img_burrito.svg",name:"Burrito"},{url:"/img_salad.svg",name:"Salad"},{url:"/img_cake.svg",name:"Cake"},{url:"/img_soup.svg",name:"Soup"},{url:"/img_fish.svg",name:"Fish"},{url:"/img_pizza.svg",name:"Pizza"},{url:"/img_rice.svg",name:"Rice"}],n=re(!1);return(s,r)=>(ee(),te(ie,null,[E("div",null,[(ee(),te(ie,null,Sn(t,i=>E("figure",null,[E("img",{src:i.url},null,8,qu),E("figcaption",null,_t(i.name),1)])),64))]),E("button",{onClick:r[0]||(r[0]=()=>n.value=!0)},"<>코드 보기"),Be(E("div",Gu,[r[2]||(r[2]=E("pre",null,`        <template>
             <div>
                 <figure v-for='x in imgList'> 
                 <img :src='x.url'></img> 
@@ -122,16 +122,16 @@
 
         <script setup>
             const imgList = [
-                {url: 'img_burrito.svg', name: 'Burrito'},
-                {url: 'img_salad.svg', name: 'Salad'},
-                {url: 'img_cake.svg', name: 'Cake'},
-                {url: 'img_soup.svg', name: 'Soup'},
-                {url: 'img_fish.svg', name: 'Fish'},
-                {url: 'img_pizza.svg', name: 'Pizza'},
-                {url: 'img_rice.svg', name: 'Rice'},
+                {url: '/img_burrito.svg', name: 'Burrito'},
+                {url: '/img_salad.svg', name: 'Salad'},
+                {url: '/img_cake.svg', name: 'Cake'},
+                {url: '/img_soup.svg', name: 'Soup'},
+                {url: '/img_fish.svg', name: 'Fish'},
+                {url: '/img_pizza.svg', name: 'Pizza'},
+                {url: '/img_rice.svg', name: 'Rice'},
             ]
         <\/script>
-    `,-1)),E("button",{onClick:r[1]||(r[1]=()=>n.value=!1)}," X ")],512),[[Ue,n.value]])],64))}},Xu=bt(Qu,[["__scopeId","data-v-6cd7de4b"]]),Yu="/vue-site/img_lightBulb.svg",Ju={class:"lightContainer"},Zu={class:"lightDiv"},ef={class:"imgContainer"},tf=["src"],nf=["onClick"],sf={class:"codeView"},rf={__name:"Events_click",setup(e){const t=[{name:"Burrito",url:"img_burrito.svg"},{name:"Salad",url:"img_salad.svg"},{name:"Cake",url:"img_cake.svg"},{name:"Soup",url:"img_soup.svg"},{name:"Fish",url:"img_fish.svg"},{name:"Pizza",url:"img_pizza.svg"},{name:"Rice",url:"img_rice.svg"}],n=re("img_pizza.svg"),s=re(!1),r=re(!1);return(i,o)=>(ee(),te(ie,null,[E("div",Ju,[E("div",Zu,[Be(E("div",null,null,512),[[Ue,s.value]]),o[3]||(o[3]=E("img",{src:Yu},null,-1))]),E("button",{class:"lightBtn",onClick:o[0]||(o[0]=l=>s.value=!s.value)},"Switch Light")]),E("div",ef,[E("img",{src:n.value},null,8,tf),E("ul",null,[(ee(),te(ie,null,Sn(t,l=>E("li",{onClick:c=>n.value=l.url},_t(l.name),9,nf)),64))])]),E("button",{onClick:o[1]||(o[1]=l=>r.value=!0)}," <>코드 보기 "),Be(E("div",sf,[o[4]||(o[4]=E("pre",null,`<template>
+    `,-1)),E("button",{onClick:r[1]||(r[1]=()=>n.value=!1)}," X ")],512),[[Ue,n.value]])],64))}},Xu=bt(Qu,[["__scopeId","data-v-9230d54c"]]),Yu="/vue-site/img_lightBulb.svg",Ju={class:"lightContainer"},Zu={class:"lightDiv"},ef={class:"imgContainer"},tf=["src"],nf=["onClick"],sf={class:"codeView"},rf={__name:"Events_click",setup(e){const t=[{name:"Burrito",url:"/img_burrito.svg"},{name:"Salad",url:"/img_salad.svg"},{name:"Cake",url:"/img_cake.svg"},{name:"Soup",url:"/img_soup.svg"},{name:"Fish",url:"/img_fish.svg"},{name:"Pizza",url:"/img_pizza.svg"},{name:"Rice",url:"/img_rice.svg"}],n=re("img_pizza.svg"),s=re(!1),r=re(!1);return(i,o)=>(ee(),te(ie,null,[E("div",Ju,[E("div",Zu,[Be(E("div",null,null,512),[[Ue,s.value]]),o[3]||(o[3]=E("img",{src:Yu},null,-1))]),E("button",{class:"lightBtn",onClick:o[0]||(o[0]=l=>s.value=!s.value)},"Switch Light")]),E("div",ef,[E("img",{src:n.value},null,8,tf),E("ul",null,[(ee(),te(ie,null,Sn(t,l=>E("li",{onClick:c=>n.value=l.url},_t(l.name),9,nf)),64))])]),E("button",{onClick:o[1]||(o[1]=l=>r.value=!0)}," <>코드 보기 "),Be(E("div",sf,[o[4]||(o[4]=E("pre",null,`<template>
     <div class='lightContainer'>
         <div class='lightDiv'>
             <div v-show='lightOn'></div>
@@ -155,20 +155,20 @@
 import { ref } from 'vue';
 
 const imgList = [
-    { name: 'Burrito', url: 'img_burrito.svg' },
-    { name: 'Salad', url: 'img_salad.svg' },
-    { name: 'Cake', url: 'img_cake.svg' },
-    { name: 'Soup', url: 'img_soup.svg' },
-    { name: 'Fish', url: 'img_fish.svg' },
-    { name: 'Pizza', url: 'img_pizza.svg' },
-    { name: 'Rice', url: 'img_rice.svg' }
+    { name: 'Burrito', url: '/img_burrito.svg' },
+    { name: 'Salad', url: '/img_salad.svg' },
+    { name: 'Cake', url: '/img_cake.svg' },
+    { name: 'Soup', url: '/img_soup.svg' },
+    { name: 'Fish', url: '/img_fish.svg' },
+    { name: 'Pizza', url: '/img_pizza.svg' },
+    { name: 'Rice', url: '/img_rice.svg' }
 ];
 
 const imgUrl = ref('img_pizza.svg');
 
 const lightOn = ref(false);
 <\/script>
-        `,-1)),E("button",{onClick:o[2]||(o[2]=l=>r.value=!1)}," X ")],512),[[Ue,r.value]])],64))}},of=bt(rf,[["__scopeId","data-v-fbe02921"]]),lf={class:"codeView"},cf={__name:"Events_input",setup(e){const t=re(0),n=re(!1);return(s,r)=>(ee(),te(ie,null,[E("div",null,[E("input",{type:"text",onInput:r[0]||(r[0]=i=>t.value++),placeholder:"입력하세요"},null,32),E("p",null,_t("Input events occured: "+t.value),1)]),E("button",{onClick:r[1]||(r[1]=i=>n.value=!0)}," <>코드 보기 "),Be(E("div",lf,[r[3]||(r[3]=E("pre",null,`<template>
+        `,-1)),E("button",{onClick:o[2]||(o[2]=l=>r.value=!1)}," X ")],512),[[Ue,r.value]])],64))}},of=bt(rf,[["__scopeId","data-v-ceb5cde9"]]),lf={class:"codeView"},cf={__name:"Events_input",setup(e){const t=re(0),n=re(!1);return(s,r)=>(ee(),te(ie,null,[E("div",null,[E("input",{type:"text",onInput:r[0]||(r[0]=i=>t.value++),placeholder:"입력하세요"},null,32),E("p",null,_t("Input events occured: "+t.value),1)]),E("button",{onClick:r[1]||(r[1]=i=>n.value=!0)}," <>코드 보기 "),Be(E("div",lf,[r[3]||(r[3]=E("pre",null,`<template>
     <div>
         <input type='text' @input='inpCount++' placeholder='입력하세요'>
         <p>{{ 'Input events occured: ' + inpCount }}</p>
