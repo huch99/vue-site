@@ -45,15 +45,23 @@
 &lt;script setup&gt;
 import { ref } from 'vue';
 
+import burrito from '../../assets/img_burrito.svg';
+import salad from '../../assets/img_salad.svg';
+import cake from '../../assets/img_cake.svg';
+import soup from '../../assets/img_soup.svg';
+import fish from '../../assets/img_fish.svg';
+import pizza from '../../assets/img_pizza.svg';
+import rice from '../../assets/img_rice.svg';
+
 const imgList = [
-    { name: 'Burrito', url: '/img_burrito.svg' },
-    { name: 'Salad', url: '/img_salad.svg' },
-    { name: 'Cake', url: '/img_cake.svg' },
-    { name: 'Soup', url: '/img_soup.svg' },
-    { name: 'Fish', url: '/img_fish.svg' },
-    { name: 'Pizza', url: '/img_pizza.svg' },
-    { name: 'Rice', url: '/img_rice.svg' }
-];
+    { url: burrito, name: 'Burrito' },
+    { url: salad, name: 'Salad' },
+    { url: cake, name: 'Cake' },
+    { url: soup, name: 'Soup' },
+    { url: fish, name: 'Fish' },
+    { url: pizza, name: 'Pizza' },
+    { url: rice, name: 'Rice' },
+]
 
 const imgUrl = ref('img_pizza.svg');
 
@@ -69,15 +77,23 @@ const lightOn = ref(false);
 <script setup>
 import { ref } from 'vue';
 
+import burrito from '../../assets/img_burrito.svg';
+import salad from '../../assets/img_salad.svg';
+import cake from '../../assets/img_cake.svg';
+import soup from '../../assets/img_soup.svg';
+import fish from '../../assets/img_fish.svg';
+import pizza from '../../assets/img_pizza.svg';
+import rice from '../../assets/img_rice.svg';
+
 const imgList = [
-    { name: 'Burrito', url: '/img_burrito.svg' },
-    { name: 'Salad', url: '/img_salad.svg' },
-    { name: 'Cake', url: '/img_cake.svg' },
-    { name: 'Soup', url: '/img_soup.svg' },
-    { name: 'Fish', url: '/img_fish.svg' },
-    { name: 'Pizza', url: '/img_pizza.svg' },
-    { name: 'Rice', url: '/img_rice.svg' }
-];
+    { url: burrito, name: 'Burrito' },
+    { url: salad, name: 'Salad' },
+    { url: cake, name: 'Cake' },
+    { url: soup, name: 'Soup' },
+    { url: fish, name: 'Fish' },
+    { url: pizza, name: 'Pizza' },
+    { url: rice, name: 'Rice' },
+]
 
 const imgUrl = ref('img_pizza.svg');
 

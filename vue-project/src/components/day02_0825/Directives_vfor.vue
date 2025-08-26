@@ -20,15 +20,23 @@
 &lt;/template&gt;
 
 &lt;script setup&gt;
-    const imgList = [
-        { url: '/public/img_burrito.svg', name: 'Burrito' },
-        { url: '/public/img_salad.svg', name: 'Salad' },
-        { url: '/public/img_cake.svg', name: 'Cake' },
-        { url: '/public/img_soup.svg', name: 'Soup' },
-        { url: '/public/img_fish.svg', name: 'Fish' },
-        { url: '/public/img_pizza.svg', name: 'Pizza' },
-        { url: '/public/img_rice.svg', name: 'Rice' },
-    ]
+import burrito from '../../assets/img_burrito.svg';
+import salad from '../../assets/img_salad.svg';
+import cake from '../../assets/img_cake.svg';
+import soup from '../../assets/img_soup.svg';
+import fish from '../../assets/img_fish.svg';
+import pizza from '../../assets/img_pizza.svg';
+import rice from '../../assets/img_rice.svg';
+
+const imgList = [
+    { url: burrito, name: 'Burrito' },
+    { url: salad, name: 'Salad' },
+    { url: cake, name: 'Cake' },
+    { url: soup, name: 'Soup' },
+    { url: fish, name: 'Fish' },
+    { url: pizza, name: 'Pizza' },
+    { url: rice, name: 'Rice' },
+]
 &lt;/script&gt;
     </pre>
 
@@ -39,14 +47,22 @@
 <script setup>
 import { ref } from 'vue';
 
+import burrito from '../../assets/img_burrito.svg';
+import salad from '../../assets/img_salad.svg';
+import cake from '../../assets/img_cake.svg';
+import soup from '../../assets/img_soup.svg';
+import fish from '../../assets/img_fish.svg';
+import pizza from '../../assets/img_pizza.svg';
+import rice from '../../assets/img_rice.svg';
+
 const imgList = [
-    { url: '/public/img_burrito.svg', name: 'Burrito' },
-    { url: '/public/img_salad.svg', name: 'Salad' },
-    { url: '/public/img_cake.svg', name: 'Cake' },
-    { url: '/public/img_soup.svg', name: 'Soup' },
-    { url: '/public/img_fish.svg', name: 'Fish' },
-    { url: '/public/img_pizza.svg', name: 'Pizza' },
-    { url: '/public/img_rice.svg', name: 'Rice' },
+    { url: burrito, name: 'Burrito' },
+    { url: salad, name: 'Salad' },
+    { url: cake, name: 'Cake' },
+    { url: soup, name: 'Soup' },
+    { url: fish, name: 'Fish' },
+    { url: pizza, name: 'Pizza' },
+    { url: rice, name: 'Rice' },
 ]
 
 const view = ref(false);
