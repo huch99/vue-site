@@ -31,11 +31,12 @@ const links = [
     { link: '/vif', title: 'v-if', dateTitle: 'day02 - 0825' },
     { link: '/vshow', title: 'v-show', dateTitle: 'day02 - 0825' },
     { link: '/vfor', title: 'v-for', dateTitle: 'day02 - 0825' },
-    { link: '/click', title: 'event - click', dateTitle: 'day02 - 0825' },
-    { link: '/input', title: 'event - input', dateTitle: 'day02 - 0825' },
-    { link: '/mousemove', title: 'event - mousemove', dateTitle: 'day02 - 0825' },
 
+    { link: '/click', title: 'event - click', dateTitle: 'day03 - 0826' },
+    { link: '/input', title: 'event - input', dateTitle: 'day03 - 0826' },
+    { link: '/mousemove', title: 'event - mousemove', dateTitle: 'day03 - 0826' },
     { link: '/methods', title: 'methods', dateTitle: 'day03 - 0826' },
+    { link: '/modifiers', title: 'event - modifiers', dateTitle: 'day03 - 0826' },
 
 ]
 

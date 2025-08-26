@@ -8,6 +8,7 @@ import Events_click from './components/day02_0825/Events_click.vue'
 import Events_input from './components/day02_0825/Events_input.vue'
 import Events_mousemove from './components/day02_0825/Events_mousemove.vue'
 import Methods from './components/day03_0826/Methods.vue'
+import E_Modifiers from './components/day03_0826/E_Modifiers.vue'
 
 const routes = [
   { path: '/vbind', component: Directives_vbind },
@@ -18,6 +19,8 @@ const routes = [
   { path: '/input', component: Events_input },
   { path: '/mousemove', component: Events_mousemove },
   { path: '/methods', component: Methods },
+  { path: '/methods', component: Methods },
+  { path: '/modifiers', component: E_Modifiers },
 ]
 
 const router = createRouter({
