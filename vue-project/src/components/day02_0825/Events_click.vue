@@ -95,7 +95,7 @@ const imgList = [
     { url: rice, name: 'Rice' },
 ]
 
-const imgUrl = ref('img_pizza.svg');
+const imgUrl = ref(pizza);
 
 const lightOn = ref(false);
 const view = ref(false);
