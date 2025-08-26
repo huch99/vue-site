@@ -1,14 +1,11 @@
 <template>
     <div class="layoutContainer">
         <ul>
-            <li v-for="(x, xIndex) in dates" :key="xIndex" 
-                @mouseover="() => showState[x] = true"
+            <li v-for="(x, xIndex) in dates" :key="xIndex" @mouseover="() => showState[x] = true"
                 @mouseleave="() => showState[x] = false">
                 {{ x }}
                 <ul v-show="showState[x]">
-                    <li v-for="(y, yIndex) in filteredLinks(x)" :key="yIndex"
-                        class="subMenuList"
-                    >
+                    <li v-for="(y, yIndex) in filteredLinks(x)" :key="yIndex" class="subMenuList">
                         <router-link :to='y.link' class="router-list">
                             {{ y.title }}
                         </router-link>
@@ -37,6 +34,9 @@ const links = [
     { link: '/click', title: 'event - click', dateTitle: 'day02 - 0825' },
     { link: '/input', title: 'event - input', dateTitle: 'day02 - 0825' },
     { link: '/mousemove', title: 'event - mousemove', dateTitle: 'day02 - 0825' },
+
+    { link: '/methods', title: 'methods', dateTitle: 'day03 - 0826' },
+
 ]
 
 const showState = reactive({});
@@ -97,6 +97,6 @@ function filteredLinks(date) {
 
 .router-list:hover {
     font-weight: bold;
-    
+
 }
 </style>
