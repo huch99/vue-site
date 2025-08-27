@@ -24,7 +24,7 @@
 <script setup>
 import { reactive, ref } from 'vue';
 
-const dates = ['day02 - 0825', 'day03 - 0826'];
+const dates = ['day02 - 0825', 'day03 - 0826','day04 - 0827'];
 
 const links = [
     { link: '/vbind', title: 'v-bind', dateTitle: 'day02 - 0825' },
@@ -37,6 +37,9 @@ const links = [
     { link: '/mousemove', title: 'event - mousemove', dateTitle: 'day03 - 0826' },
     { link: '/methods', title: 'methods', dateTitle: 'day03 - 0826' },
     { link: '/modifiers', title: 'event - modifiers', dateTitle: 'day03 - 0826' },
+    
+    { link: '/form', title: 'form', dateTitle: 'day04 - 0827' },
+    { link: '/vmodel', title: 'form - vmodel', dateTitle: 'day04 - 0827' },
 
 ]
 
