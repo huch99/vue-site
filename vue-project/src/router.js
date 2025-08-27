@@ -14,6 +14,7 @@ import Form_vmodel from './components/day04_0827/Form_vmodel.vue'
 import Class_bind from './components/day04_0827/Class_bind.vue'
 import Computed from './components/day04_0827/Computed.vue'
 import Watchers from './components/day04_0827/Watchers.vue'
+import WebDesign_b1 from './components/webDisign/webDesign_b1.vue'
 
 const routes = [
   { path: '/vbind', component: Directives_vbind },
@@ -31,6 +32,7 @@ const routes = [
   { path: '/classbind', component: Class_bind },
   { path: '/computed', component: Computed },
   { path: '/watchers', component: Watchers },
+  { path: '/webdesign_b1', component: WebDesign_b1 },
 
 ]
 

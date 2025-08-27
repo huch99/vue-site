@@ -24,7 +24,7 @@
 <script setup>
 import { reactive, ref } from 'vue';
 
-const dates = ['day02 - 0825', 'day03 - 0826','day04 - 0827'];
+const dates = ['웹디자인기능사','day02 - 0825', 'day03 - 0826','day04 - 0827'];
 
 const links = [
     { link: '/vbind', title: 'v-bind', dateTitle: 'day02 - 0825' },
@@ -43,6 +43,8 @@ const links = [
     { link: '/classbind', title: 'class - bind', dateTitle: 'day04 - 0827' },
     { link: '/computed', title: 'computed', dateTitle: 'day04 - 0827' },
     { link: '/watchers', title: 'watchers', dateTitle: 'day04 - 0827' },
+
+    { link: '/webdesign_b1', title: 'B - 1', dateTitle: '웹디자인기능사' },
 
 ]
 
