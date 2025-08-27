@@ -43,11 +43,25 @@
             <div class="list">
                 <p>쇼핑 목록</p>
                 <ul>
-                    <li v-for="item in shoppingList"
-                        :style="{ backgroundColor: item.itemImpotant ? 'lightpink' : 'lightgreen' }">
+                    <li v-for="item in shoppingList" v-show="!item.found"
+                        @click="item.found = !item.found"
+                        :style="{ backgroundColor: item.itemImpotant ? 'lightpink' : 'lightgreen',
+                            cursor: 'pointer'
+                        }">
                         {{ item.name }} - {{ item.number }}
                     </li>
                 </ul>
+
+                <ul>
+                    <li v-for="item in shoppingList" v-show="item.found"
+                        @click="item.found = !item.found"
+                        :style="{ backgroundColor: 'lightgrey', textDecoration: 'line-through',
+                            cursor: 'pointer'
+                        }">
+                        {{ item.name }} - {{ item.number }}
+                    </li>
+                </ul>
+
             </div>
         </div>
     </div>
@@ -59,8 +73,8 @@
     &lt; div class='result1' &gt;
         &lt; h3 &gt;양방향 바인딩&lt; /h3 &gt;
         &lt; form &gt;
-            &lt; input type='text' v-model='inpText' &gt;
-            &lt; p &gt;&#123;&#123; inpText &#125;&#125;&lt; /p &gt;
+            &lt; input type='text' <mark>v-model='inpText'</mark> &gt;
+            &lt; p &gt;<mark>&#123;&#123; inpText &#125;&#125;</mark>&lt; /p &gt;
         &lt; /form &gt;
     &lt; /div &gt;
 
@@ -68,8 +82,8 @@
         &lt; h3 &gt;동적 체크박스&lt; /h3 &gt;
         &lt; form &gt;
             &lt; label &gt;
-                &lt; input type='checkbox' v-model='important' &gt;
-                &#123;&#123; important &#125;&#125;
+                &lt; input type='checkbox' <mark>v-model='important'</mark> &gt;
+                <mark>&#123;&#123; important &#125;&#125;</mark>
             &lt; /label &gt;
         &lt; /form &gt;
     &lt; /div &gt;
@@ -78,14 +92,14 @@
         &lt; h3 &gt;쇼핑목록 만들기&lt; /h3 &gt;
         &lt; form @submit.prevent='addItem' &gt;
             &lt; p &gt; 사야할 것 :
-                &lt; input type='text' v-model='itemName' required placeholder='쇼핑 목록' &gt;
+                &lt; input type='text' <mark>v-model='itemName'</mark> required placeholder='쇼핑 목록' &gt;
             &lt; /p &gt;
             &lt; p &gt; 개수 :
-                &lt; input type='number' v-model='itemNumber' &gt;
+                &lt; input type='number' <mark>v-model='itemNumber'</mark> &gt;
             &lt; /p &gt;
             &lt; p &gt; 중요한가 ?
                 &lt; label &gt;
-                    &lt; input type='checkbox' v-model='important2' &gt;
+                    &lt; input type='checkbox' <mark>v-model='important2'</mark> &gt;
                     &#123;&#123; important2 &#125;&#125;
                 &lt; /label &gt;
             &lt; /p &gt;
@@ -93,9 +107,23 @@
         &lt; /form &gt;
 
         &lt; div class='list' &gt;
+            &lt; p &gt;쇼핑 목록&lt; /p &gt; 
             &lt; ul &gt;
-                &lt; li v-for='item in shoppingList'
-                    :style='{ backgroundColor: item.itemImpotant ? 'lightpink' : 'lightgreen' }' &gt;
+                &lt; li v-for='item in shoppingList' v-show="!item.found"
+                    @click="item.found = !item.found"
+                    :style='{ backgroundColor: item.itemImpotant ? 'lightpink' : 'lightgreen',
+                            cursor: 'pointer'
+                        }" &gt;
+                    &#123;&#123; item.name &#125;&#125; - &#123;&#123; item.number &#125;&#125;
+                &lt; /li &gt;
+            &lt; /ul &gt;
+
+            &lt; ul &gt;
+                &lt; li v-for='item in shoppingList' v-show="item.found"
+                    @click="item.found = !item.found"
+                    :style='{ backgroundColor: 'lightgrey', textDecoration: 'line-through',
+                            cursor: 'pointer'
+                        }" &gt;
                     &#123;&#123; item.name &#125;&#125; - &#123;&#123; item.number &#125;&#125;
                 &lt; /li &gt;
             &lt; /ul &gt;
@@ -106,12 +134,14 @@
 &lt; script setup &gt;
 import { ref } from 'vue';
 
-const inpText = ref('');
-const important = ref(false);
-const important2 = ref(false);
+<mark>const inpText = ref('');</mark>
+<mark>const important = ref(false);</mark>
+<mark>const important2 = ref(false);</mark>
+<mark>const founded = ref(false);</mark>
 
-const itemName = ref('');
-const itemNumber = ref(0);
+<mark>const itemName = ref('');</mark>
+<mark>const itemName = ref('');</mark>
+<mark>const itemNumber = ref(0);</mark>
 const shoppingList = ref([]);
 const addItem = () => {
     let item = {
@@ -136,6 +166,7 @@ import { ref } from 'vue';
 const inpText = ref('');
 const important = ref(false);
 const important2 = ref(false);
+const founded = ref(false);
 
 const itemName = ref('');
 const itemNumber = ref(0);
@@ -144,7 +175,8 @@ const addItem = () => {
     let item = {
         name: itemName.value,
         number: itemNumber.value,
-        itemImpotant: important2.value
+        itemImpotant: important2.value,
+        found: founded.value
     }
 
     shoppingList.value.push(item);

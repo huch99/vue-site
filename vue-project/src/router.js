@@ -11,6 +11,9 @@ import Methods from './components/day03_0826/Methods.vue'
 import E_Modifiers from './components/day03_0826/E_Modifiers.vue'
 import Form from './components/day04_0827/Form.vue'
 import Form_vmodel from './components/day04_0827/Form_vmodel.vue'
+import Class_bind from './components/day04_0827/Class_bind.vue'
+import Computed from './components/day04_0827/Computed.vue'
+import Watchers from './components/day04_0827/Watchers.vue'
 
 const routes = [
   { path: '/vbind', component: Directives_vbind },
@@ -25,6 +28,9 @@ const routes = [
   { path: '/modifiers', component: E_Modifiers },
   { path: '/form', component: Form },
   { path: '/vmodel', component: Form_vmodel },
+  { path: '/classbind', component: Class_bind },
+  { path: '/computed', component: Computed },
+  { path: '/watchers', component: Watchers },
 
 ]
 

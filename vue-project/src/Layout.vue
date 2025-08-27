@@ -40,6 +40,9 @@ const links = [
     
     { link: '/form', title: 'form', dateTitle: 'day04 - 0827' },
     { link: '/vmodel', title: 'form - vmodel', dateTitle: 'day04 - 0827' },
+    { link: '/classbind', title: 'class - bind', dateTitle: 'day04 - 0827' },
+    { link: '/computed', title: 'computed', dateTitle: 'day04 - 0827' },
+    { link: '/watchers', title: 'watchers', dateTitle: 'day04 - 0827' },
 
 ]
 
