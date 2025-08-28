@@ -47,6 +47,7 @@ const setScrollOn = ref(true);
     background-color: #10106b;
     display: flex;
     flex-direction: row;
+    z-index: 1000;
 }
 
 .header-logo {
@@ -97,7 +98,7 @@ const setScrollOn = ref(true);
     left: 0;
     width: 100%;
     overflow: hidden;
-    z-index: 100;
+    z-index: 2000;
 }
 
 .header-subMenu > li {
